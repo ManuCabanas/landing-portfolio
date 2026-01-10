@@ -1,5 +1,6 @@
 import './App.css'
 import manuelImg from './assets/ManuelCabanas.jpeg'
+import estiloLibreImg from './assets/EstiloLibre.jpg'
 
 const projects = [
   {
@@ -7,7 +8,7 @@ const projects = [
     description: "Estilo Libre is a management system for a swimming center. It allows the center to manage its students, acvtivities and differente classes. ",
     tags: ["Next.js", "React", "TypeScript", "PostgreSQL", "Tailwind"],
     link: "https://estilo-libre-app-demo.vercel.app/",
-    image: "src/assets/EstiloLibre.jpg"
+    image: estiloLibreImg
   },
   {
     title: "Project Name 2",
