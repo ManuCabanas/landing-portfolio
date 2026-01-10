@@ -3,28 +3,32 @@ import manuelImg from './assets/ManuelCabanas.jpeg'
 
 const projects = [
   {
-    title: "Project Name 1",
-    description: "A brief description of what this project does and the technologies used. Explain the problem it solves and your role.",
-    tags: ["React", "TypeScript", "Tailwind"],
-    link: "#"
+    title: "Estilo Libre - Management System",
+    description: "Estilo Libre is a management system for a swimming center. It allows the center to manage its students, acvtivities and differente classes. ",
+    tags: ["Next.js", "React", "TypeScript", "PostgreSQL", "Tailwind"],
+    link: "https://estilo-libre-app-demo.vercel.app/",
+    image: "src/assets/EstiloLibre.jpg"
   },
   {
     title: "Project Name 2",
     description: "Another amazing project you've worked on. Highlight the key features and what makes it special.",
     tags: ["Node.js", "PostgreSQL", "Docker"],
-    link: "#"
+    link: "#",
+    image: ""
   },
   {
     title: "Project Name 3",
     description: "Describe this project and the impact it had. What did you learn? What challenges did you overcome?",
     tags: ["Python", "FastAPI", "AWS"],
-    link: "#"
+    link: "#",
+    image: ""
   },
   {
     title: "Project Name 4",
     description: "One more project to showcase your diverse skill set and experience across different domains.",
     tags: ["React Native", "Firebase", "Redux"],
-    link: "#"
+    link: "#",
+    image: ""
   },
 ]
 
@@ -96,11 +100,22 @@ I’m constantly driven to learn, improve my skills, and grow as a software deve
                            transition-all duration-500 hover:border-amber-500/30 hover:bg-zinc-900/80 hover:shadow-[0_0_60px_-15px_rgba(251,191,36,0.15)] group"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <h3 className="font-semibold text-xl text-zinc-100 group-hover:text-amber-300 transition-colors">
-                    {project.title}
-                  </h3>
+                  <div className="flex items-center gap-4">
+                    {project.image && (
+                      <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-zinc-700 group-hover:border-amber-500/50 transition-colors">
+                        <img 
+                          src={project.image} 
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <h3 className="font-semibold text-xl text-zinc-100 group-hover:text-amber-300 transition-colors">
+                      {project.title}
+                    </h3>
+                  </div>
                   <svg 
-                    className="w-5 h-5 text-zinc-600 group-hover:text-amber-400 transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-all" 
+                    className="w-5 h-5 text-zinc-600 group-hover:text-amber-400 transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-all flex-shrink-0" 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     stroke="currentColor"
@@ -148,12 +163,12 @@ I’m constantly driven to learn, improve my skills, and grow as a software deve
                 </svg>
               </div>
               <span className="relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-amber-400 after:transition-all after:duration-300 group-hover:after:w-full">
-                your.email@example.com
+                manucabanas803@gmail.com
               </span>
             </a>
 
             <a 
-              href="https://linkedin.com/in/yourprofile" 
+              href="https://linkedin.com/in/manuel-cabanas-944148224" 
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-zinc-300 hover:text-amber-400 transition-colors group"
@@ -171,7 +186,7 @@ I’m constantly driven to learn, improve my skills, and grow as a software deve
 
           <div className="mt-16 pt-8 border-t border-zinc-800/50">
             <p className="text-zinc-600 text-sm">
-              © {new Date().getFullYear()} Manuel J. Cabanas. Built with React & Tailwind CSS.
+              © {new Date().getFullYear()} Manuel Cabanas. Built with React & Tailwind CSS.
             </p>
           </div>
         </div>
