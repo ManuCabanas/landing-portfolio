@@ -62,7 +62,7 @@ export const projects: Project[] = [
             text: 'Every class is represented by a slot, in which the available places quantity is shown, in addition to different values:',
             subItems: [
               '"Confirmed" represents the number of students who have confirmed their attendance for the class.',
-              '"Probable" represents the number of students who are likely to attend the class, based on previous inscriptions.',
+              '"Probable" represents the number of students who are likely to renew their inscription for the class, based on previous inscriptions. When filling the calendar, this students will be considered the first ones to be enrolled to the class.',
               '"Eliminable" represents the number of students whose last attendance was more than two weeks ago, making them the last ones to be considered when filling the calendar.',
             ],
           },
