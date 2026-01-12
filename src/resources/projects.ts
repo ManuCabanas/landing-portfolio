@@ -123,20 +123,4 @@ export const projects: Project[] = [
     year: '2025',
     role: 'Full Stack Developer',
   },
-  {
-    slug: 'project-name-3',
-    title: 'Project Name 3',
-    description:
-      'Describe this project and the impact it had. What did you learn? What challenges did you overcome?',
-    tags: ['Python', 'FastAPI', 'AWS'],
-    link: '#',
-  },
-  {
-    slug: 'project-name-4',
-    title: 'Project Name 4',
-    description:
-      'One more project to showcase your diverse skill set and experience across different domains.',
-    tags: ['React Native', 'Firebase', 'Redux'],
-    link: '#',
-  },
 ]
