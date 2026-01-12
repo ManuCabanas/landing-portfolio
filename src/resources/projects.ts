@@ -1,7 +1,5 @@
 import estiloLibreImg from '../assets/EstiloLibre.jpg'
 import calendarFlow from '../assets/projectsImages/estiloLibre/calendar/calendarFlow.png'
-import calendarToolbar from '../assets/projectsImages/estiloLibre/calendar/calendarToolbar.png'
-import inscriptionPage from '../assets/projectsImages/estiloLibre/inscription/inscriptionPage.png'
 import inscriptionVideo from '../assets/projectsImages/estiloLibre/inscription/InscriptionVideo.mov'
 
 export interface Project {
