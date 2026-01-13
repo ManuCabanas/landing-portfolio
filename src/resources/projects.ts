@@ -4,6 +4,8 @@ import inscriptionVideo from '../assets/projectsImages/estiloLibre/inscription/I
 import studentsFlowAccess from '../assets/projectsImages/estiloLibre/students/studentsFlowAccess.mov'
 import activitiesFlowAccess from '../assets/projectsImages/estiloLibre/activities/activitiesFlowAccess.mov'
 import attendancesFlow from '../assets/projectsImages/estiloLibre/attendances/attendancesFlow.png'
+import notesAppImg from '../assets/projectsImages/notesApp/notesAppIcon.svg'
+import noteMainFlow from '../assets/projectsImages/notesApp/noteMainFlow.png'
 
 export interface Project {
   slug: string
@@ -123,5 +125,32 @@ export const projects: Project[] = [
     ],
     year: '2025',
     role: 'Full Stack Developer',
+  },
+  {
+    slug: 'notes-app',
+    title: 'Notes App',
+    description:
+      'Notes App is a simple notes designed to create, organize and manage personal notes, allowing users to categorize, archive and quickly find their content. The architecture is based on a React web app, that communicates with an API RESTful built with Node.js and Express.',
+    tags: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
+    link: 'https://notes-app-drab-six.vercel.app/',
+    image: notesAppImg,
+    features: [
+      'Create, edit and delete notes',
+      'Categorize notes',
+      'Archive notes',
+      'Quickly find notes',
+    ],
+    flows: [
+      {
+        title: 'Notes',
+        description: 'The Notes flow allows the user to create, edit and delete notes.',
+        details: [
+          'By clicking on the "New Note" button, a drawer is opened, letting the user create a new Note.',
+          'By clicking on the "Categories" button, a modal is opened, letting the user view and manage the categories.',
+          'The archive feature allows users to archive and unarchive notes at any time, and easily switch between archived and active notes views.',
+        ],
+        mainImage: noteMainFlow,
+      },
+    ],
   },
 ]
