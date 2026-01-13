@@ -128,9 +128,9 @@ export const projects: Project[] = [
   },
   {
     slug: 'notes-app',
-    title: 'Notes App',
+    title: 'Nõta - Notes App',
     description:
-      'Notes App is a simple notes designed to create, organize and manage personal notes, allowing users to categorize, archive and quickly find their content. The architecture is based on a React web app, that communicates with an API RESTful built with Node.js and Express.',
+      'Nõta is a simple notes designed to create, organize and manage personal notes, allowing users to categorize, archive and quickly find their content. The architecture is based on a React web app, that communicates with an API RESTful built with Node.js and Express.',
     tags: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
     link: 'https://notes-app-drab-six.vercel.app/',
     image: notesAppImg,
