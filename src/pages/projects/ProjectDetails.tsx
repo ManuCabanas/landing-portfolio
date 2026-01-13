@@ -95,7 +95,7 @@ export default function ProjectDetails() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-30 h-30 rounded-full object-cover border-2 border-zinc-700 shadow-lg"
+                className="w-24 h-24 rounded-2xl object-cover border-2 border-zinc-700 shadow-lg"
               />
             )}
             <div>
