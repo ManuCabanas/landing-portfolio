@@ -81,9 +81,10 @@ export const projects: Project[] = [
       {
         title: 'Attendances',
         description:
-          "The Attendances flow allows the user to view and manage the center's attendances, filtering by class.",
+          'By clicking the ‘Attendances’ button in the top navigation bar, you are taken to the Attendances page. This flow allows users to view and manage the center’s attendances, with the ability to filter them by class.',
         details: [
           "This feature let the user view every active student's inscription for the selected class, and let the user change the state for each attendance.",
+          'The client wanted to see all student class inscriptions, even if the student is not enrolled in the filtered class. For this reason, not every slot matches the selected class schedule.',
           'The different attendance states are represented by different colors, and the "C" label at the top of the slot, indicates that the student didn\'t attend with the access card.',
         ],
         mainImage: attendancesFlow,
