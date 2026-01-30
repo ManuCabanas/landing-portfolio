@@ -1,18 +1,19 @@
 import estiloLibreImg from '../assets/EstiloLibre.jpg'
 import calendarFlow from '../assets/projectsImages/estiloLibre/calendar/calendarFlow.png'
-import inscriptionVideo from '../assets/projectsImages/estiloLibre/inscription/InscriptionVideo.mov'
+import inscriptionPOST from '../assets/projectsImages/estiloLibre/inscription/inscriptionPOST.mov'
 import studentsFlowAccess from '../assets/projectsImages/estiloLibre/students/studentsFlowAccess.mov'
 import activitiesFlowAccess from '../assets/projectsImages/estiloLibre/activities/activitiesFlowAccess.mov'
 import attendancesFlow from '../assets/projectsImages/estiloLibre/attendances/attendancesFlow.png'
 import notesAppImg from '../assets/projectsImages/notesApp/notesAppIcon.svg'
 import noteMainFlow from '../assets/projectsImages/notesApp/noteMainFlow.png'
+import mgrcImg from '../assets/projectsImages/mgrcApp/mgrcImg.png'
 
 export interface Project {
   slug: string
   title: string
   description: string
   longDescription?: string
-  tags: string[]
+  tags?: string[]
   link?: string
   github?: string
   image?: string
@@ -68,12 +69,12 @@ export const projects: Project[] = [
               '"Eliminable" represents the number of students whose last attendance was more than two weeks ago, making them the last ones to be considered when filling the calendar.',
             ],
           },
-          'By clicking on a specific slot, the user can view the class details and the list of enrolled students. Inside the modal, the user can also set the student’s attendance status.',
+          'By clicking on a specific slot, the user can view the class details and the list of enrolled students. Inside the modal, the user can also set the student’s attendance status and schedule a recovery class.',
           {
             text: 'The toolbar allows the user to trigger different actions available on the calendar:',
             subItems: [
-              'The "Advanced View" switch lets the user see the calendar with more detail. By default, the calendar is shown in a basic view, displaying a summary of the current month.',
-              'By clicking the "Closure Days" button, a modal opens where the user can view, edit, and add the center’s closure days.',
+              'The "Vista avanzada" switch lets the user see the calendar with more detail. By default, the calendar is shown in a basic view, displaying a summary of the current month.',
+              'By clicking the "Días de cierre" button, a modal opens where the user can view, edit, and add the center’s closure days.',
               'The "Nueva inscripción" button allows the user to add a new student to the center. This process is explained in the next section.',
             ],
           },
@@ -101,7 +102,7 @@ export const projects: Project[] = [
           'The "Autocompletar" button automatically fills all the slots based on the selected pattern. This feature improves the user experience by avoiding the need to scroll through the entire calendar to assign each slot manually.',
           'When the “Es alternado” checkbox is selected, the student does not need to be assigned to a specific slot. Instead, a date range is defined, allowing the student to attend the center on any of those days. This option is useful for students who are not yet sure which day they can attend.',
         ],
-        mainVideo: inscriptionVideo,
+        mainVideo: inscriptionPOST,
       },
       {
         title: 'Students',
@@ -152,5 +153,11 @@ export const projects: Project[] = [
         mainImage: noteMainFlow,
       },
     ],
+  },
+  {
+    slug: 'mgrc-app',
+    title: 'MGRC - News Portal',
+    description: 'Comming soon...',
+    image: mgrcImg,
   },
 ]

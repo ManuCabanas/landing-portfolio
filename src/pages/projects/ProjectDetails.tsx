@@ -151,14 +151,15 @@ export default function ProjectDetails() {
           {/* Tags and Action Buttons */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-1.5 text-sm font-medium text-amber-300/80 bg-amber-500/10 rounded-full border border-amber-500/20"
-                >
-                  {tag}
-                </span>
-              ))}
+              {project.tags &&
+                project.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-1.5 text-sm font-medium text-amber-300/80 bg-amber-500/10 rounded-full border border-amber-500/20"
+                  >
+                    {tag}
+                  </span>
+                ))}
             </div>
 
             {/* Action Buttons */}

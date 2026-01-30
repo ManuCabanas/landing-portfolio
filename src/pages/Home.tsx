@@ -121,7 +121,7 @@ export default function Home() {
                 </div>
                 <p className="text-zinc-400 mb-6 leading-relaxed">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
+                  {project.tags?.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
                       className="px-3 py-1 text-xs font-medium text-zinc-400 bg-zinc-800/50 rounded-full border border-zinc-700/50"
