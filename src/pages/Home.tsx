@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { projects } from '../resources/projects'
-import manuelImg from '../assets/ManuelCabanas.jpeg'
+import profileImage from '../assets/ProfileImage.jpeg'
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <header className="min-h-[90vh] flex items-center justify-center px-6 py-20 animate-[fadeIn_0.8s_ease-out_forwards]">
         <div className="max-w-4xl mx-auto text-center">
           <img
-            src={manuelImg}
+            src={profileImage}
             alt="Manuel Cabanas"
             className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
           />
