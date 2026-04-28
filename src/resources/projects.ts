@@ -128,6 +128,14 @@ export const projects: Project[] = [
     role: 'Full Stack Developer',
   },
   {
+    slug: 'mgrc-app',
+    title: 'MGRC App',
+    description:
+      'An all-in-one digital platform for sports clubs that combines real-time updates, team management insights, and a fantasy-style game to drive community engagement and keep fans connected all season long.',
+    link: 'https://mgrc.vercel.app/',
+    image: mgrcImg,
+  },
+  {
     slug: 'notes-app',
     title: 'Nõta - Notes App',
     description:
@@ -153,13 +161,5 @@ export const projects: Project[] = [
         mainImage: noteMainFlow,
       },
     ],
-  },
-  {
-    slug: 'mgrc-app',
-    title: 'MGRC App - In development...',
-    description:
-      'An all-in-one digital platform for sports clubs that combines real-time updates, team management insights, and a fantasy-style game to drive community engagement and keep fans connected all season long.',
-    //link: 'https://mgrc.vercel.app/',
-    image: mgrcImg,
   },
 ]
